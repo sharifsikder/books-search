@@ -1,0 +1,13 @@
+.books{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+
+}
+.book{
+
+   
+    margin-bottom: 10px;
+    width: 18rem;
+    margin: 0 auto;
+}

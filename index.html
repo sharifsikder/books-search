@@ -5,11 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Stor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     
-    <h1>Sharif Sikder</h1>
+  <div class="container">
+    <h1 class="text-center text-primary mt-5 ">Type Your Book Name </h1>
+
+    <!-- input search -->
+    <div class="input-group mb-3 w-50 mx-auto mt-4">
+        <input id="search-field" type="text" class="form-control" placeholder="Enter Your Book Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchButton()" class="btn btn-outline-secondary" type="button">Search</button>
+      </div>
+     <!-- input search -->
+     <div id="total-book" class="my-5"></div>
+
+    <div id="all-book" class=" books mx-auto" >
+      
+        
+            <!-- <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a> -->
+            
+          </div>
+           
+          </div>
+    </div>
+  </div>
 
     <script src="book.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
