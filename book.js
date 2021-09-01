@@ -10,7 +10,7 @@ const searchButton = () => {
     allBooks.textContent = '';
     totalBooks.textContent = '';
    
-    const url = ` http://openlibrary.org/search.json?q=${searchText}`;
+    const url = ` https://openlibrary.org/search.json?q=${searchText}`;
     console.log(url)
     fetch(url)
     .then(res => res.json())
@@ -26,7 +26,8 @@ const displayBook = (data) => {
     const totalDiv = document.createElement('div');
     totalDiv.innerHTML = `<h3> Total Books : ${counts}</h3>`;
     totalBooks.appendChild(totalDiv);
-    console.log(counts)
+    
+    
 
     const books = data.docs;
     console.log(books)
@@ -37,7 +38,7 @@ const displayBook = (data) => {
         const div = document.createElement('div');
         div.classList.add('card');
         div.classList.add('book')
-        div.innerHTML = `<img src="${book.cover_i}" class="card-img-top" alt="...">
+        div.innerHTML = `<img src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
         <div class="card-body">
           <h2 class="card-title">${book.title? book.title:''}</h2>
           <h5 class="card-text">Author Name : ${book.author_name? book.author_name:''}</h5>
