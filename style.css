@@ -4,10 +4,36 @@
    
 
 }
+.totals{
+    color:rgba(184, 61, 17, 0.849)
+}
+.athur{
+    color:rgb(177, 14, 136)
+}
+.title{
+    color:rgb(15, 202, 108);
+    text-align: center;
+    margin-bottom: 20px !important;
+}
+.head{
+    color:rgba(9, 199, 104, 0.795) !important;
+}
 .book{
 
    
-    margin-top: 20px !important;
-    width: 21rem;
+    margin-bottom: 40px !important;
+    width: 22rem;
     margin: 0 auto;
+}
+.publish{
+    color:rgb(233, 87, 2);
+    font-weight: 500;
+}
+
+.book-image{
+
+    height: 280px;
+    width: 220px;
+    margin: 0 auto;
+    margin-top: 15px;
 }

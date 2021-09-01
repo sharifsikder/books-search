@@ -24,7 +24,7 @@ const displayBook = (data) => {
     const count = data.docs;
     const counts = count.length;
     const totalDiv = document.createElement('div');
-    totalDiv.innerHTML = `<h3> Total Books : ${counts}</h3>`;
+    totalDiv.innerHTML = `<h3 class="totals"> Total Books : ${counts}</h3>`;
     totalBooks.appendChild(totalDiv);
     
     
@@ -38,12 +38,12 @@ const displayBook = (data) => {
         const div = document.createElement('div');
         div.classList.add('card');
         div.classList.add('book')
-        div.innerHTML = `<img src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top" alt="...">
+        div.innerHTML = `<img src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top book-image" alt="...">
         <div class="card-body">
-          <h2 class="card-title">${book.title? book.title:''}</h2>
-          <h5 class="card-text">Author Name : ${book.author_name? book.author_name:''}</h5>
-          <p class= "card-text">First Published : ${book.first_publish_year? book.first_publish_year: '' }</p>
-          <a href="#" class="btn btn-primary">SALE</a>
+          <h3 class="card-title title">${book.title? book.title:''}</h3>
+          <h5 class="card-text athur">Author Name : ${book.author_name? book.author_name:''}</h5>
+          <p class= "card-text publish">First Published : ${book.first_publish_year? book.first_publish_year: '' }</p>
+          <a href="#" class="btn btn-danger">SALE</a>
        `;
        allBooks.appendChild(div)
     })
