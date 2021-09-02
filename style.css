@@ -4,19 +4,24 @@
    
 
 }
+.bg{
+    background-color: rgb(31, 52, 75);
+}
+.text{
+    color:#fff !important;
+}
 .totals{
-    color:rgba(184, 61, 17, 0.849)
+    color:rgba(236, 253, 0, 0.849);
+    text-align: center;
 }
-.athur{
-    color:rgb(177, 14, 136)
-}
+
 .title{
     color:rgb(15, 202, 108);
-    text-align: center;
-    margin-bottom: 20px !important;
+    margin-bottom: 19px !important;
+    font-weight: 600;
 }
 .head{
-    color:rgba(9, 199, 104, 0.795) !important;
+    color:rgba(4, 248, 248, 0.973) !important;
 }
 .book{
 
@@ -24,10 +29,16 @@
     margin-bottom: 40px !important;
     width: 22rem;
     margin: 0 auto;
+  
 }
 .publish{
     color:rgb(233, 87, 2);
     font-weight: 500;
+}
+.publisher{
+    color:rgb(10, 163, 156);
+    font-weight: 500;
+    margin-bottom: 10px !important;
 }
 
 .book-image{
