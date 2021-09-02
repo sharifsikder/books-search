@@ -9,7 +9,9 @@ const searchButton = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
     searchField.value = '';
-
+if(searchText === ''){
+    console.log('click')
+}
 
     spinner.style.display = 'block'
     allBooks.textContent = '';
@@ -29,9 +31,8 @@ const displayBook = (data) => {
     
     spinner.style.display = 'none';
         const count = data.numFound;
-        const counts = count;
         const totalDiv = document.createElement('div');
-        totalDiv.innerHTML = `<h3 class="totals"> Total Results Found : ${counts}</h3>`;
+        totalDiv.innerHTML = `<h3 class="totals"> Total Results Found : ${count}</h3>`;
         totalBooks.appendChild(totalDiv);
     
     const books = data.docs;
