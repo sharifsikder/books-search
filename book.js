@@ -14,7 +14,7 @@ const searchButton = () => {
 
     allBooks.textContent = '';
     totalBooks.textContent = '';
-    
+
 // Error Handle //
    if(searchText === ''){
     error.style.display = 'block';
@@ -56,7 +56,7 @@ const displayBook = (data) => {
     <div class="card-body">
     <h5 class="card-title title"> Book Name : ${book.title? book.title:''}</h5>
     <h5 class="card-text athur"> Author : ${book.author_name? book.author_name:''}</h5>
-    <p class="card-text publisher">Publisher : ${book.publisher.slice(0,10)}</p>
+    <p class="card-text publisher">Publisher : ${book.publisher? book.publisher:''}</p>
     <p class= "card-text publish">First Published : ${book.first_publish_year? book.first_publish_year: '' }</p>
     <a href="#" class="btn btn-danger">Details >></a>`;
 
