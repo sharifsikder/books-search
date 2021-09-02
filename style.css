@@ -1,8 +1,6 @@
 .books{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-   
-
 }
 .bg{
     background-color: rgb(31, 52, 75);
@@ -14,7 +12,6 @@
     color:rgba(236, 253, 0, 0.849);
     text-align: center;
 }
-
 .title{
     color:rgb(15, 202, 108);
     margin-bottom: 19px !important;
@@ -23,13 +20,10 @@
 .head{
     color:rgba(4, 248, 248, 0.973) !important;
 }
-.book{
-
-   
+.book{ 
     margin-bottom: 40px !important;
     width: 22rem;
     margin: 0 auto;
-  
 }
 .publish{
     color:rgb(233, 87, 2);
@@ -40,9 +34,7 @@
     font-weight: 500;
     margin-bottom: 10px !important;
 }
-
 .book-image{
-
     height: 280px;
     width: 220px;
     margin: 0 auto;
