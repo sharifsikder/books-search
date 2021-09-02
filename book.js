@@ -4,11 +4,12 @@
  const spinner = document.getElementById('spinner');
  spinner.style.display = 'none'
 
+//search button click//
 const searchButton = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
     searchField.value = '';
-    // searchField.value = '';
+
 
     spinner.style.display = 'block'
     allBooks.textContent = '';
@@ -25,8 +26,7 @@ const searchButton = () => {
 
 const displayBook = (data) => {
     console.log(data)
-  
-   
+    
     spinner.style.display = 'none';
         const count = data.numFound;
         const counts = count;
