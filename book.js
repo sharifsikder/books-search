@@ -72,7 +72,42 @@ const displayBook = (data) => {
     <p class="card-text publisher">Publisher : ${book.publisher? book.publisher:''}</p>
     <p class= "card-text publish">First Published : ${book.first_publish_year? book.first_publish_year: '' }</p>
 
-      <button id="btnButon" class="btn btn-danger">Details >></button>`;
+
+    
+  <!-- Button trigger modal -->
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   Buy Now
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel"> ${book.title? book.title:''}</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+        <img src=" https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg" class="card-img-top book-image mb-3" alt="...">
+
+        <h4 class="card-text athur text-left"> Author : ${book.author_name? book.author_name:''}</h4>
+
+        <p class="card-text publisher">Publisher : ${book.publisher? book.publisher:''}</p>
+        <p class= "card-text publish">First Published : ${book.first_publish_year? book.first_publish_year: '' }</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+      <button id="btnButon" class="btn btn-danger">Details >></button>
+        
+      `;
 
  allBooks.appendChild(div)
     })
