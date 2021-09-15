@@ -1,3 +1,16 @@
+
+// buttonSearch বাটন র্সাচ অন্য কোনো জায়গায়  থাকলে কাজ করবে না ।
+
+const buttonSearch = document.getElementById('search-button');
+const searchInput = document.getElementById('search-field');
+
+searchInput.addEventListener('keypress', function(event){
+
+   if(event.key === 'Enter'){
+      buttonSearch.click()
+   }
+})
+
 // id call //
  const allBooks = document.getElementById('all-book');
  const totalBooks = document.getElementById('total-book');
@@ -58,7 +71,8 @@ const displayBook = (data) => {
     <h5 class="card-text athur"> Author : ${book.author_name? book.author_name:''}</h5>
     <p class="card-text publisher">Publisher : ${book.publisher? book.publisher:''}</p>
     <p class= "card-text publish">First Published : ${book.first_publish_year? book.first_publish_year: '' }</p>
-    <a href="#" class="btn btn-danger">Details >></a>`;
+
+      <button id="btnButon" class="btn btn-danger">Details >></button>`;
 
  allBooks.appendChild(div)
     })
